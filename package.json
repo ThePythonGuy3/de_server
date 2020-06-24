@@ -1,0 +1,29 @@
+{
+  "name": "ds1",
+  "version": "1.0.0",
+  "description": "A useless bot only specialized for [de_server](discord.gg/RCCVQFW)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "14.2.0",
+    "npm": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gdeft/de_server.git"
+  },
+  "keywords": [],
+  "author": "Gdeft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gdeft/de_server/issues"
+  },
+  "homepage": "https://github.com/Gdeft/de_server#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  }
+}
