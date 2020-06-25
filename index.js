@@ -1,4 +1,4 @@
-require('dotenv').config(); 
+require('dotenv').config();
 const Discord = require("discord.js");
 const Enmap = require("enmap");
 const fs = require("fs");
@@ -37,4 +37,4 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-client.login(config.token);
+client.login(process.env.DISCORD_TOKEN);
