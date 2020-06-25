@@ -1,9 +1,24 @@
 exports.run = (client, message, args) => {
   const [link] = args;
-  if(!args || args.length < 1) return message.reply("you need to include an argument.");
+  const embed = { embed: {
+      color: '#ffffff',
+      author: {
+        name: client.user.username,
+        icon_url: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+      },
+      fields: [{
+        name: `GitHub link`,
+        value: `Click [here](https://www.github.com/${link}) to open the GitHub link.`
+      }],
+      footer: {
+        text: 'If the page is not available, try to type it correctly and make sure it exists!'
+      }
+    }
+  }
+  if(!args || args.length < 1) return message.reply("you need to include the argument!");
   else if(args.length < 2) {
-    message.channel.send(`<https://github.com/${link}>`);
+    message.channel.send(embed);
   } else {
-    message.reply('you only need one argument.');
+    message.reply('you only need one argument!');
   }
 };

@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
   const [user, repository] = args;
   const userEmbed = { embed: {
-      color: 3400473,
+      color: '#ffffff',
       author: {
         name: client.user.username,
         icon_url: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
     }
   }
   const repoEmbed = { embed: {
-      color: 3400473,
+      color: '#ffffff',
       author: {
         name: client.user.username,
         icon_url: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
