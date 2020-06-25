@@ -18,7 +18,7 @@ module.exports = (client, message) => {
         },
         fields: [{
           name: 'Error',
-          value: 'Cannot execute that command inside DMs!'
+          value: 'Cannot execute that command inside DM!'
         }]
       }
     })
