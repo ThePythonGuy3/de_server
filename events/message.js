@@ -22,7 +22,7 @@ module.exports = (client, message) => {
         }]
       }
     })
+  } else {
+    cmd.run(client, message, args);
   }
-
-  cmd.run(client, message, args);
 };
