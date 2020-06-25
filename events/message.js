@@ -9,7 +9,7 @@ module.exports = (client, message) => {
 
   if(!cmd) return;
 
-  if(cmd && !message.guild && message.author.id !== client.config.ownerID){
+  if(cmd && !message.guild && cmd.conf.guildOnly){
     message.channel.send({embed: {
         color: '#ff0000',
         author: {

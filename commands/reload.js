@@ -14,3 +14,8 @@ exports.run = (client, message, args) => {
   client.commands.set(commandName, props);
   message.reply(`the command \`${commandName}\` has been reloaded.`);
 };
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false
+}

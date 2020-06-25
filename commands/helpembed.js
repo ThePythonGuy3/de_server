@@ -12,3 +12,8 @@ exports.run = (client, message) => {
       value: '**Command format:** \n\`.embed <h>;<title>;<color>;<description>;<footer>;<fieldName>;<fieldValue>\`\n\nNote: The first argument or \`<h>\` won\'t be added to the embed no matter what did you put in it, but it\'s required for the embed to work properly.\n\n**Command usage example:** \n\`.embed h;Insert title here;#ffffff;Insert description here;Insert footer here;This is the field name;This is the field value\`'})
   message.channel.send(embed)
 }
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false
+}

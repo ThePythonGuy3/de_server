@@ -22,3 +22,8 @@ exports.run = (client, message, args) => {
     message.reply('you only need one argument!');
   }
 };
+
+exports.conf = {
+  enabled: true,
+  guildOnly: true
+}

@@ -20,3 +20,8 @@ exports.run = (client, message) => {
     message.reply('argument is invalid! Type \`.helpembed\` for help.')
   }
 }
+
+exports.conf = {
+  enabled: true,
+  guildOnly: true
+}

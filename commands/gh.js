@@ -41,3 +41,8 @@ exports.run = (client, message, args) => {
     message.reply(`you cannot put more than two arguments!`);
   }
 };
+
+exports.run = {
+  enabled: true,
+  guildOnly: true
+}

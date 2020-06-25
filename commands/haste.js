@@ -17,3 +17,8 @@ exports.run = async (client, message, args) => {
 
     message.channel.send(`Message has been successfully sent to ${client.config.hasteurl}/${res.key} from <@${message.author.id}>`);
 }
+
+exports.conf = {
+  enabled: true,
+  guildOnly: true
+}
