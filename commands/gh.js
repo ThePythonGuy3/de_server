@@ -42,7 +42,7 @@ exports.run = (client, message, args) => {
   }
 };
 
-exports.run = {
+exports.conf = {
   enabled: true,
   guildOnly: true
 }
