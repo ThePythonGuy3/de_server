@@ -10,6 +10,13 @@ client.on('message', message => {
   if (message.content === 'h'){
     const h = message.guild.emojis.cache.find(emoji => emoji.name === 'h_');
     message.react(h);
+  } else
+
+  if(message.channel.type == "text" && message.channel.name.toLowerCase() == "suggestions"){
+    const yes = message.guild.emojis.cache.find(emoji => emoji.name === 'yes');
+    const no = message.guild.emojis.cache.find(emoji => emoji.name === 'no');
+    message.react(yes);
+    message.react(no);
   }
 });
 
