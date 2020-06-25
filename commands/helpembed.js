@@ -17,3 +17,9 @@ exports.conf = {
   enabled: true,
   guildOnly: false
 }
+
+exports.h = {
+  name: 'helpembed',
+  desc: 'A guide to show how to use the **.embed** command.',
+  usage: '**.helpembed**'
+}

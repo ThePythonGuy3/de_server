@@ -22,3 +22,9 @@ exports.conf = {
   enabled: true,
   guildOnly: true
 }
+
+exports.h = {
+  name: 'haste',
+  desc: 'Pastes your code to hastebin.',
+  usage: '**.haste** *<code>*'
+}

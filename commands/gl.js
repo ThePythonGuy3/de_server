@@ -27,3 +27,9 @@ exports.conf = {
   enabled: true,
   guildOnly: true
 }
+
+exports.h = {
+  name: 'gl',
+  desc: 'Displays the GitHub link according to the argument.',
+  usage: '**.gl** *<insert/args/here>*'
+}

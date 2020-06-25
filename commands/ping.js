@@ -7,3 +7,9 @@ exports.conf = {
   enabled: true,
   guildOnly: false
 }
+
+exports.h = {
+  name: 'ping',
+  desc: 'Pong!',
+  usage: '**.ping**'
+}

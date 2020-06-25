@@ -12,3 +12,9 @@ exports.conf = {
   enabled: true,
   guildOnly: false
 }
+
+exports.h = {
+  name: 'help',
+  desc: 'Yes.',
+  usage: '**.help** *<command> (optional)*'
+}

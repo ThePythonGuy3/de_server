@@ -23,3 +23,9 @@ exports.conf = {
   enabled: true,
   guildOnly: true
 }
+
+exports.h = {
+  name: 'google',
+  desc: 'Googles the argument that you typed.',
+  usage: '**.google** *<phrase>*'
+}

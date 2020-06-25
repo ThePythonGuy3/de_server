@@ -25,3 +25,9 @@ exports.conf = {
   enabled: true,
   guildOnly: true
 }
+
+exports.h = {
+  name: 'embed',
+  desc: 'Creates a one field embed message. Type **.helpembed** to learn more.',
+  usage: '**.embed** *<h>;<title>;<color>;<desc>;<footer>;<fieldName>;<fieldValue>*'
+}

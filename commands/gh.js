@@ -46,3 +46,9 @@ exports.conf = {
   enabled: true,
   guildOnly: true
 }
+
+exports.h = {
+  name: 'gh',
+  desc: 'Displays the link of the GitHub user or the user\'s repository.',
+  usage: '**.gh** *<user> <repository> (optional)*'
+}
