@@ -1,4 +1,4 @@
-exports.run = (client, message) => {
+exports.run = (client, message, args) => {
   var Discord = require('discord.js')
   var embedOne = new Discord.MessageEmbed()
     .setAuthor(client.user.username, client.user.avatarURL())
