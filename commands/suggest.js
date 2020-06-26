@@ -18,8 +18,10 @@ exports.run = (client, message) => {
       }
     }
   }
+  let suggestChannel = message.channel.id == client.config.suggestionsID;
+
   message.delete();
-  client.channels.get(client.config.suggestionsID).send(embed);
+  client.channels.cache.get(client.config.suggestionsID).send(embed);
 }
 
 exports.conf = {
