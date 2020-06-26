@@ -19,7 +19,7 @@ exports.run = (client, message) => {
     }
   }
   message.delete();
-  message.channel.send(embed);
+  client.channels.get(client.config.suggestionsID).send(embed);
 }
 
 exports.conf = {
