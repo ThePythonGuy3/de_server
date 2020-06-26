@@ -20,8 +20,34 @@ exports.run = (client, message) => {
   }
   let suggestChannel = message.channel.id == client.config.suggestionsID;
 
-  message.delete();
-  client.channels.cache.get(client.config.suggestionsID).send(embed);
+  if (args1.length == 2) return client.channels.cache.get(client.config.suggestionsID).send(embed);
+    else if (!args1){
+      message.channel.send({embed: {
+          color: '#ff0000',
+          author: {
+            name: client.user.username,
+            icon_url: client.user.avatarURL()
+          },
+          fields: [{
+            name: 'Error',
+            value: 'You need to include the arguments!'
+          }]
+        }
+      })
+    } else {
+        message.channel.send({embed: {
+          color: '#ff0000',
+          author: {
+            name: client.user.username,
+            icon_url: client.user.avatarURL()
+          },
+          fields: [{
+            name: 'Error',
+            value: 'You need 3 arguments to type in, type **.help suggest** for help.'
+          }]
+        }
+      })
+    }
 }
 
 exports.conf = {
