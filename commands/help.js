@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
           },
           fields: [{
             name: `${command.h.name}`,
-            value: `${command.h.desc}\n**Command usage:**\n${command.h.usage}`
+            value: `${command.h.desc}\n\n**Command usage:**\n${command.h.usage}`
           }]
         }
       })
