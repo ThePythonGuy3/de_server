@@ -16,7 +16,7 @@ exports.run = (client, message) => {
           author: {
             name: client.user.username,
             icon_url: client.user.avatarURL()
-          }
+          },
           field: [{
             name: `${command.h.name}`,
             value: `${command.h.desc}\**nCommand usage:**\n${command.h.usage}`
