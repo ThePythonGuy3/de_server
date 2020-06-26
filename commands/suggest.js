@@ -1,14 +1,16 @@
 exports.run = (client, message) => {
-  var args1 = message.content.slice(client.config.prefix.length).trim().split(/>/g);
-  var [mod, author, suggestion] = args1;
+  var args1 = message.content.slice(client.config.prefix.length).trim().split(/;/g);
+  var command1 = args1.shift().toLowerCase();
+
+  var [modrole, suggestion] = args1;
   const embed = { embed: {
-      color: '#0cf0d5',
+      color: '#00ff00',
       author: {
-        name: client.user.username,
-        icon_url: client.user.avatarURL()
+        name: message.author.username,
+        icon_url: message.author.avatarURL()
       },
       fields: [{
-        name: `${mod}`+`${author}`,
+        name: `${modrole}`,
         value: `${suggestion}`
       }],
       footer: {
@@ -16,10 +18,17 @@ exports.run = (client, message) => {
       }
     }
   }
+  message.delete();
   message.channel.send(embed);
 }
 
 exports.conf = {
   enabled: true,
   guildOnly: true
+}
+
+exports.h = {
+  name: 'Suggest',
+  desc: 'Redirects your suggestion to the <#704356079756247160> channel.',
+  usage: '**.suggest** *<h>;<mod-role>;<suggestion>*'
 }
