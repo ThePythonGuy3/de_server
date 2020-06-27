@@ -20,6 +20,8 @@ client.on('message', message => {
   }
 });
 
+//client.settings = new Enmap({name: "settings"});
+
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
