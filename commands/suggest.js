@@ -10,8 +10,8 @@ exports.run = (client, message) => {
         icon_url: message.author.avatarURL()
       },
       fields: [{
-        name: `${modrole}`,
-        value: `${suggestion}`
+        name: `Suggestion`,
+        value: `${modrole}\n\n${suggestion}`
       }],
       footer: {
         text: 'This suggestion might be reviewed in the following hours, days, weeks, or never.'
